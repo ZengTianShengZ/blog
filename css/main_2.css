@@ -1,0 +1,112 @@
+/* var text-decoration */
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+}
+/*--
+    Common Css
+--*/
+body {
+    font-family: myfont;
+    font-size: 14px;
+    font-weight: 400;
+}
+.z-d1{
+    width: 100%;
+    height: 300px;
+    background-color: aquamarine;
+    font-size: 22px;
+
+}
+#head .container{
+    border: 1px solid red;
+    padding: 0;
+
+}
+#head .container .row{
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+#head .container .row .col-md-6{
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+#z-lia ul li a{
+    color: brown;
+}
+#z-lia ul li a:before {
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    width: 10px;
+}
+#z-lia ul li a:hover:before {
+    background-color:rebeccapurple;
+    content: "";
+    width: 100%;
+}
+.block{
+    text-align: center;
+}
+.block img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    -webkit-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+}
+.block img:hover{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rebeccapurple;
+}
+
+.form-control{
+    width: 450px;
+    background: #fff;
+    opacity: 0.9;
+    border: none;
+    height: 65px;
+    border-radius: 0px;
+    font-size: 15px;
+}
+
+.input-group-addon button {
+    width: 212px;
+    height: 65px;
+    border: 1px solid red;
+    border-radius: 0px;
+    background: #7EC3BB;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+}
+
+  form textarea {
+    height: 140px;
+    border-radius: 0px;
+    box-shadow: none;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+}
+ form textarea:focus {
+    border: 1px solid red;
+}
+
+
