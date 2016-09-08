@@ -41,7 +41,7 @@ var parseResponseData = function (response) {
     for(var i = 0 ,len = response.length;i<len;i++ ){
 
         titles.push(response[i].title);
- 
+
         var up_day = response[i].updated_at;
         up_day = up_day.slice(0,up_day.indexOf('T'));
         updated_at.push(up_day);
