@@ -5,28 +5,28 @@ $(function () {
 
     $('.popover-show').popover('hide');
 
-    $.ajax({
+    // 图片预加载 ！
+    var bg_img = new Image();
+    bg_img.onload = function ()
+    {
+        console.log("................"+bg_img.src)
+        $('#person-info').css('background-image','url('+bg_img.src+')' );
+    }
+    bg_img.src ='https://raw.githubusercontent.com/ZengTianShengZ/blog/gh-pages/imgs/left_bg2.jpg';
+
+
+   $.ajax({
         type:'GET',
         url:'https://api.github.com/repos/ZengTianShengZ/ZengTianShengZ.github.io/issues',
         success:function (response,statue,xhr) {
             parseResponseData(response);
 
-            //  alert(response[0].url +"....."+   response[0].title +"....."+  response[0].updated_at   + "....."+  response[0].body                 );
         },
         error:function () {
 
         }
     });
-/*
 
-    var starT =  text.indexOf('<!--');
-    var endT = text.indexOf('-->');
-
-    console.log( starT+4 + "....." +   endT       );
-
-    var str = text.slice(starT+4,endT);
-
-    console.log(   str  );*/
 
 });
 
@@ -36,11 +36,17 @@ var parseResponseData = function (response) {
         updated_at = [],
         article_intor = [];
 
+    //2016-09-08T06:53:12Z
 
     for(var i = 0 ,len = response.length;i<len;i++ ){
 
         titles.push(response[i].title);
-        updated_at.push(response[i].updated_at);
+ 
+        var up_day = response[i].updated_at;
+        up_day = up_day.slice(0,up_day.indexOf('T'));
+        updated_at.push(up_day);
+
+
         var article =  response[i].body;
         var starT =  article.indexOf('<!--');
         var endT = article.indexOf('-->');
@@ -49,8 +55,9 @@ var parseResponseData = function (response) {
         } else{
             article_intor.push( response[i].title );
         }
+        var  blog_html = '<div class="blog-content"><div class="row"><div class="col-md-7 blog-atc"> <h3 class="blog-title"><a href="#"><strong>'+titles[i]+ '</strong></a></h3> <p>'+article_intor[i]+ '</p> <p><span>'+updated_at[i]+ '</span> <a class="pull-right" href="#">点击查看全部内容</a></p> </div> <div class="col-md-5"> <div class="thumbnail blog-img"> <img src="imgs/ar_bg.jpg" alt=""> </div> </div> </div> </div>';
 
-        var  blog_html = '<div class="blog-content"><div class="panel panel-danger"><div class="panel-heading"><h3 class="panel-title blog-c-h3">标题：'+titles[i]+ '<span class="blog-c-data">日期：'+updated_at[i]+ '</span></h3></div><div class="panel-body blog-meta"><p> '+article_intor[i]+ '</p> </div> <div class="panel-footer"> <a href="#" class="blog-c-link pull-right">点击查看全部内容</a> <div class="clearfix"></div> </div> </div> </div>  '  ;
+        //var  blog_html = '<div class="blog-content"><div class="panel panel-danger"><div class="panel-heading"><h3 class="panel-title blog-c-h3">标题：'+titles[i]+ '<span class="blog-c-data">日期：'+updated_at[i]+ '</span></h3></div><div class="panel-body blog-meta"><p> '+article_intor[i]+ '</p> </div> <div class="panel-footer"> <a href="#" class="blog-c-link pull-right">点击查看全部内容</a> <div class="clearfix"></div> </div> </div> </div>  '  ;
 
         $('#blog').append(blog_html);
     }

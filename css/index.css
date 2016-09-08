@@ -3,11 +3,14 @@ a{
     text-decoration: none;
 }
 
-
+.person-box{
+    padding: 0;
+    background :#646565;
+}
 #person-info{
 
     position: fixed;
-
+    background :#646565;
     width: 350px;
 }
 .logo-h2{
@@ -62,17 +65,21 @@ a{
 
 }
 
-.blog-c-h3{
+.blog-atc .blog-title{
+    font-family: "KaiTi" ,STKaiti ,"楷体";
 
 }
-.blog-c-data{
-    display: inline-block;
-    float: right;
+.blog-atc .blog-title a{
+    color: #231919;
 }
-.blog-c-link{
-
+.blog-atc p{
+    font-family: SimHei,"Hiragino Sans GB","黑体";
+    font-size: 15px;
 }
 
+.blog-img{
+    margin-top: 20px;
+}
 
 
 
