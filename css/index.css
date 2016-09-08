@@ -1,11 +1,49 @@
 
+a{
+    text-decoration: none;
+}
+
+#person-info{
+
+    /*
+
+    background : url(imgs/left_bg.jpg) no-repeat;
+    */
+
+}
+.logo-h2{
+    margin: 20px auto;
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+
+}
+.infor-icon{
+    text-align: center;
+}
+.infor-icon img{
+    width: 22px;
+    height: 22px;
+    margin: 0 15px;
+}
+
+.per-detial-info{
+    padding: 10px 70px;
+    color: #FFF;
+}
 
 
-
-
-
-
-
+.about-me{
+    color: #FFF;
+}
+.about-me h4{
+    text-align: center;
+}
+.about-me p{
+    margin: 0 30px;
+}
 
 
 
