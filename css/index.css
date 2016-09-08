@@ -3,21 +3,23 @@ a{
     text-decoration: none;
 }
 
+
 #person-info{
 
-    /*
+    position: fixed;
 
-    background : url(imgs/left_bg.jpg) no-repeat;
-    */
-
+    width: 350px;
 }
 .logo-h2{
     margin: 20px auto;
     text-align: center;
+    padding: 10px;
+
 }
 .logo{
     width: 100px;
     height: 100px;
+    border: 2px solid #FFF;
 
 }
 .infor-icon{
@@ -45,27 +47,48 @@ a{
     margin: 0 30px;
 }
 
+.per-ability{
+    padding: 30px;
+}
 
 
+/*      右半部分，博客内容       */
 
+.container-fluid{
+    background-color: #FAFBFF;
+}
+.blog-content{
+    padding: 20px;
 
+}
 
+.blog-c-h3{
 
+}
+.blog-c-data{
+    display: inline-block;
+    float: right;
+}
+.blog-c-link{
 
-
-
+}
 
 
 
 
 /* 小屏幕（平板 ，大于 等于768px）*/
 @media (min-width: 768px) {
-
+    #person-info{
+        width: 450px;
+    }
 
 }
 /* 中等屏幕（桌面显示器 ，大于 等于992px）*/
 @media (min-width: 992px) {
 
+    #person-info{
+        width: 563px;
+    }
 }
 /* 大屏幕（大桌面显示器 ，大于 等于1200px）*/
 @media (min-width: 1200px) {
