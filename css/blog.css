@@ -1,0 +1,34 @@
+
+
+#blog{
+    width: 800px;
+    margin: 20px auto;
+}
+
+.blog-head{
+    width: 800px;
+    height: 300px;
+    background: #CCC;
+    position: relative;
+}
+.blog-head img{
+    width: 100%;
+    height: 100%;
+}
+.blog-head h2{
+    color: #FFF;
+    position: absolute;
+    top: 190px;
+    left: 40px;
+}
+.blog-time p{
+    text-indent: 40px;
+    padding:15px 0;
+}
+#xxx{
+    background: #CCC;
+}
+
+
+
+
