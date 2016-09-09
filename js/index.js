@@ -41,14 +41,14 @@ var afterBgImgVisibleAnimat = function () {
         },800,function () {
             $('.about-me').fadeIn(1000);
             $('.about-me').animate({
-                top:215
+                top:220
             },800,function () {
                 $('.per-ability').fadeIn(1000);
                 $('.per-ability').animate(
                     {
                         top:374
                     },800,function () {
-                        
+
                     }
                 );
             });
@@ -96,7 +96,7 @@ var parseResponseData = function (response) {
         }
 
 
-        var  blog_html = '<div class="blog-content"><div class="row"><div class="col-md-7 blog-atc"> <h3 class="blog-title"><a class="blog_url" href="blog.html?'+url_id[i]+ '"><strong>'+titles[i]+ '</strong></a></h3> <p>'+article_intor[i]+ '</p> <p><span>'+updated_at[i]+ '</span> <a class="pull-right blog_url" href="blog.html?'+url_id[i]+ '">点击查看全部内容</a></p> </div> <div class="col-md-5"> <div class="thumbnail blog-img"> <img src="#" alt="" class="title_img'+ i +'"> </div> </div> </div> </div>';
+        var  blog_html = '<div class="blog-content"><div class="row"><div class="col-md-7 blog-atc"> <h3 class="blog-title"><a class="blog_url" target="_blank" href="blog.html?'+url_id[i]+ '"><strong>'+titles[i]+ '</strong></a></h3> <p>'+article_intor[i]+ '</p> <p><span>'+updated_at[i]+ '</span> <a class="pull-right blog_url" target="_blank" href="blog.html?'+url_id[i]+ '">点击查看全部内容</a></p> </div> <div class="col-md-5"> <div class="thumbnail blog-img"> <img src="#" alt="" class="title_img'+ i +'"> </div> </div> </div> </div>';
 
         $('#blog').append(blog_html);
 

@@ -2,7 +2,9 @@
 a{
     text-decoration: none;
 }
-
+a:hover{
+    text-decoration: none;
+}
 .person-box{
     padding: 0;
     background :#646565;
@@ -112,6 +114,25 @@ a{
     margin-top: 20px;
 }
 
+
+.blog_url:before {
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    width: 0;
+}
+.blog_url:hover:before {
+    background-color:royalblue;
+    content: "";
+    width: 100%;
+}
 
 
 /* 小屏幕（平板 ，大于 等于768px）*/

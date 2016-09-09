@@ -46,12 +46,17 @@ var parseResponseData = function (response) {
     // 图片预加载 ！
     var bg_img = new Image();
     bg_img.onload = function (){
-        $('.blog-head-img').attr('src',bg_img.src );
+        $('.blog-head-img').attr('src',bg_img.src ).fadeIn(1000,function () {
+            $('.blog-head h2').html(title).fadeIn(800).animate({
+                top:170
+            },800);
+        });
+
     }
     bg_img.src =titlt_img;
 
-    $('.blog-head h2').html(title);
-    $('.blog-time p').html(updated_at);
+
+    $('.blog-time').html(formatGithubTime(updated_at));
 
     //showdownJs 解析 markdown 转换成 html
     var converter = new showdown.Converter();
@@ -62,7 +67,21 @@ var parseResponseData = function (response) {
     $('.btn-fw'),css('color','red');
 }
 
+//2016-09-09T07:42:46Z  将 github 的时间 换成 2016年9月9日 07:33
+var formatGithubTime = function (time_data) {
 
+    var days = time_data.slice(0,time_data.indexOf('T')),
+        day1 = days.slice(0,days.indexOf('-')),
+        day2 = days.slice(days.indexOf('-'),days.length),
+        xx = day2 .replace("-","年"),
+        cc = xx .replace("-","月"),
+        bb = cc.replace(/0/g,""),
+        pas1 = day1 + bb + '日',
+        pas2 =  time_data.slice(time_data.indexOf('T')+1,time_data.lastIndexOf(':') );
+
+    return pas1+" "+pas2;
+
+}
 
 
 

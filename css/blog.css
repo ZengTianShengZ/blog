@@ -8,6 +8,7 @@
 .blog-head{
     width: 800px;
     height: 300px;
+    margin: 20px 0;
     background: #CCC;
     position: relative;
 }
@@ -18,12 +19,24 @@
 .blog-head h2{
     color: #FFF;
     position: absolute;
-    top: 190px;
+    top: 240px;
     left: 40px;
+    display: none;
 }
-.blog-time p{
+.blog-head p{
+    position: absolute;
+    top: 260px;
+    right: 40px;
+    font-size: 16px;
+    color: #FFF;
+}
+.blog-time span{
     text-indent: 40px;
     padding:15px 0;
+    background: #CCC;
+    display: block;
+    padding: 10px 20px;
+
 }
 #xxx{
     background: #CCC;
