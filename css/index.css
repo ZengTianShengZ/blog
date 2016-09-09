@@ -9,12 +9,14 @@ a{
 }
 #person-info{
 
+    height: 900px;
     position: fixed;
     background :#646565;
     width: 350px;
 }
 .logo_box{
     position: relative;
+
 }
 .log_gif{
     position: absolute;
@@ -25,6 +27,8 @@ a{
 
 }
 .logo-h2{
+    width: 100px;
+    height: 100px;
     margin: 15px auto;
     text-align: center;
 
@@ -33,26 +37,38 @@ a{
     width: 100px;
     height: 100px;
     border: 2px solid #FFF;
-
+    display: none;
 }
 .infor-icon{
+    height: 22px;
     text-align: center;
 }
 .infor-icon img{
     width: 22px;
     height: 22px;
+    display: none;
     margin: 0 10px;
 }
 
 .per-detial-info{
+    width: 100%;
+    position: absolute;
+    top: 175px;
     padding: 5px 70px;
     color: #FFF;
+    display: none;
 }
 
 
 .about-me{
+    width: 100%;
     color: #FFF;
     padding-top: 5px;
+
+    position: absolute;
+    top: 275px;
+
+    display: none;
 }
 .about-me h4{
     text-align: center;
@@ -63,6 +79,10 @@ a{
 
 .per-ability{
     padding: 5px 30px;
+    width: 100%;
+    position: absolute;
+    top: 428px;
+    display: none;
 }
 
 

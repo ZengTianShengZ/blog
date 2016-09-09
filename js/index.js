@@ -10,6 +10,8 @@ $(function () {
     bg_img.onload = function ()
     {
         $('#person-info').css('background-image','url('+bg_img.src+')' );
+        // 当背景可见时 在 将内容动画显示出来
+        afterBgImgVisibleAnimat();
     }
     bg_img.src ='https://raw.githubusercontent.com/ZengTianShengZ/blog/gh-pages/imgs/left_bg2.jpg';
 
@@ -19,7 +21,6 @@ $(function () {
         url:'https://api.github.com/repos/ZengTianShengZ/ZengTianShengZ.github.io/issues',
         success:function (response,statue,xhr) {
             parseResponseData(response);
-
         },
         error:function () {
 
@@ -28,6 +29,33 @@ $(function () {
 
 
 });
+
+var afterBgImgVisibleAnimat = function () {
+    $('.logo').fadeIn(3000);
+    $('.log_gif').fadeOut(3000);
+    $('.infor-icon img').fadeIn(4000,function () {
+
+        $('.per-detial-info').fadeIn(1000);
+        $('.per-detial-info').animate({
+            top:150
+        },800,function () {
+            $('.about-me').fadeIn(1000);
+            $('.about-me').animate({
+                top:215
+            },800,function () {
+                $('.per-ability').fadeIn(1000);
+                $('.per-ability').animate(
+                    {
+                        top:374
+                    },800,function () {
+                        
+                    }
+                );
+            });
+        });
+    });
+
+}
 
 var parseResponseData = function (response) {
 
