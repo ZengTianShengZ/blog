@@ -13,10 +13,20 @@ a{
     background :#646565;
     width: 350px;
 }
+.logo_box{
+    position: relative;
+}
+.log_gif{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left:-50px;
+
+
+}
 .logo-h2{
-    margin: 20px auto;
+    margin: 15px auto;
     text-align: center;
-    padding: 10px;
 
 }
 .logo{
@@ -31,18 +41,18 @@ a{
 .infor-icon img{
     width: 22px;
     height: 22px;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .per-detial-info{
-    padding: 10px 70px;
+    padding: 5px 70px;
     color: #FFF;
 }
 
 
 .about-me{
     color: #FFF;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .about-me h4{
     text-align: center;
@@ -52,7 +62,7 @@ a{
 }
 
 .per-ability{
-    padding: 30px;
+    padding: 5px 30px;
 }
 
 
