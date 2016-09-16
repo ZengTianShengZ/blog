@@ -6,6 +6,7 @@ $(function () {
 
     $('#SOHUCS  > div').css('display','none');
 
+    // location.search 得到页面搜索框的 信息
    var blog_id =  decodeURIComponent(location.search.substr(1));
    console.log( blog_id  );
     var blog_url = 'https://api.github.com/repos/ZengTianShengZ/ZengTianShengZ.github.io/issues/ '+ blog_id;
@@ -61,7 +62,7 @@ var parseResponseData = function (response) {
     //showdownJs 解析 markdown 转换成 html
     var converter = new showdown.Converter();
     var text      =  article_body,
-         html      = converter.makeHtml(text);
+        html      = converter.makeHtml(text);
     $('.blog-article').html(html);
 
     $('.btn-fw'),css('color','red');

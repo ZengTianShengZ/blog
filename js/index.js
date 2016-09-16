@@ -56,7 +56,6 @@ var afterBgImgVisibleAnimat = function () {
     });
 
 }
-
 var parseResponseData = function (response) {
 
     var titles = [],
