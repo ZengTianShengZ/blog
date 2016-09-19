@@ -16,7 +16,9 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100vh;
-  background: #646565 url("../../imgs/bigbg.jpg") no-repeat;
+  /*
+  background :#646565 url("../../imgs/bigbg.jpg") no-repeat;
+  */
   background-size: cover; }
 
 /* for Chrome */
@@ -63,12 +65,12 @@ body {
   .person-p .info-icons {
     width: 18.3rem;
     position: absolute;
-    top: 13.5rem;
+    top: 14.5rem;
     left: 0;
     right: 0;
     /*margin: 0 auto; 必选设置宽高才有校*/
     margin: 0 auto;
-    opacity: 0.5;
+    opacity: 0;
     transition: all 1s ease-out; }
     .person-p .info-icons ul li {
       float: left; }
@@ -91,11 +93,11 @@ body {
   .person-p .my-info {
     width: 70%;
     position: absolute;
-    top: 15.5rem;
+    top: 16.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
-    opacity: 0.5;
+    opacity: 0;
     transition: all 1s ease-out; }
   .person-p .my-info-anim {
     top: 11.5rem;
@@ -103,11 +105,11 @@ body {
   .person-p .about-me {
     width: 100%;
     position: absolute;
-    top: 20.5rem;
+    top: 21.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
-    opacity: 0.5;
+    opacity: 0;
     transition: all 1s ease-out; }
     .person-p .about-me .about-me-title {
       width: 100%;
@@ -129,10 +131,11 @@ body {
     opacity: 1; }
   .person-p .my-ability {
     position: absolute;
-    top: 37.5rem;
+    top: 38.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
+    opacity: 0;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.6);
     transition: all 1s ease-out;
@@ -481,6 +484,8 @@ body {
     display: block; } }
 
 .blog {
+  height: 100vh;
+  overflow: auto;
   color: #555555;
   padding: 2rem; }
   .blog .blog-title .bolg-time {
@@ -494,9 +499,7 @@ body {
       height: 100%; }
   .blog .blog-intor {
     width: 50%;
-    padding: 1rem;
-    height: 16rem;
-    overflow: hidden; }
+    padding: 1rem; }
 
 /* blog 的响应式布局 */
 /* 设置断点 */
