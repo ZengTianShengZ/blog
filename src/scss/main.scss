@@ -1,0 +1,172 @@
+.row,
+.col-sm-5 ,
+.col-sm-7{
+  padding: 0;
+  margin: 0;
+}
+body{
+  /*小屏幕时去掉*/
+  overflow: hidden;
+  color: #DEDBD9;
+  font-family: "KaiTi" ,STKaiti ,"楷体";
+}
+.person{
+  height: 100vh;
+  background :#646565 url("../../imgs/bigbg.jpg") no-repeat;
+  background-size: cover;
+
+}
+.person-bg{
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #646565;
+  background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+  background-color:rgba(0,0,0,0.6); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+  /* 这里不能使用 opacity: 0.6;  设置opacity元素的所有后代元素会随着一起具有透明性，一般用于调整图片或者模块的整体不透明度*/
+}
+.person-p{
+  position: relative;
+
+
+
+  /*  logo  */
+  .logo{
+      width: 7.5rem;
+      height: 7.5rem;
+      background: url("../../imgs/logo.jpg") no-repeat ;
+      background-size: cover;
+      border: 2px solid #FFF;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+      opacity: 0;
+      transition :all 1s ease-out ;
+  }
+  /*  logo-anim  */
+  .logo-anim{
+      opacity: 1;
+  }
+
+
+
+  /*  info-icons  */
+  .info-icons{
+    width: 18.3rem;
+    position: absolute;
+    top: 13.5rem;
+    left: 0;
+    right: 0;
+    /*margin: 0 auto; 必选设置宽高才有校*/
+    margin: 0 auto;
+    opacity: 0.5;
+    transition :all 1s ease-out ;
+
+    ul li{
+      float: left;
+    }
+    ul li+li{
+      padding-left: 2rem;
+    }
+
+    .infor-icon a{
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      background: url("../../imgs/icon/github.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  /*  info-icons-anim */
+  .info-icons-anim{
+    top: 9rem;
+    opacity: 1;
+  }
+
+
+  /*  my-info */
+  .my-info{
+    width: 70%;
+    position: absolute;
+    top: 15.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.5;
+    transition :all 1s ease-out ;
+  }
+  /*  my-info */
+  .my-info-anim{
+    top: 11.5rem;
+    opacity: 1;
+  }
+
+
+
+  /*  about-me */
+  .about-me{
+      width: 85%;
+      position: absolute;
+      top: 20.5rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      opacity: 0.5;
+      transition :all 1s ease-out ;
+
+
+      h3{
+          text-align: center;
+      }
+      p{
+        text-indent: 2rem;
+      }
+
+  }
+  /*  about-me */
+  .about-me-anim{
+    top: 16.5rem;
+    opacity: 1;
+  }
+
+
+
+  /*  my-ability */
+  .my-ability{
+
+    position: absolute;
+    top: 37.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.5;
+    background: #000000;
+    transition :all 1s ease-out ;
+
+
+    .mb-li-img{
+      float: left;
+      width: 32.333%;
+      height: 9rem;
+      margin-top: 0.5rem;
+      margin-left: 0.5rem;
+      background: url("../../imgs/ac_img1.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+  /*  my-ability */
+  .my-ability-anim{
+    top: 30.5rem;
+    opacity: 0.5;
+  }
+}
+
+.blog{
+  height: 100vh;
+  background: blue;
+  overflow:auto;
+}
+

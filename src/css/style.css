@@ -1,0 +1,92 @@
+
+.row,
+.col-sm-5 ,
+.col-sm-7{
+    padding: 0;
+}
+body{
+    /*小屏幕时去掉*/
+    overflow: hidden;
+}
+.person{
+    height: 100vh;
+    border: 1px solid #646565;
+    background :#646565 url("../../imgs/bigbg.jpg") no-repeat;
+    background-size: cover;
+}
+.person-p{
+    position: relative;
+}
+.person-p .logo{
+    width: 7.5rem;
+    height: 7.5rem;
+    background: url("../../imgs/logo.jpg") no-repeat ;
+    background-size: cover;
+    border: 2px solid #FFF;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.person-p .info-icons{
+    width: 18.3rem;
+    position: absolute;
+    top: 11.5rem;
+    left: 0;
+    right: 0;
+    /*margin: 0 auto; 必选设置宽高才有校*/
+    margin: 0 auto;
+
+}
+.person-p .about-me{
+    position: absolute;
+    top: 15.5rem;
+    left: 0;
+    right: 0;
+}
+.person-p .about-me h3{
+    text-align: center;
+}
+.person-p .about-me p{
+    text-indent: 2rem;
+}
+.person-p  .my-ability{
+    width: 98%;
+    position: absolute;
+    top: 22.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.person-p  .my-ability .mb-li-img{
+    float: left;
+    width: 31.333%;
+    height: 7rem;
+    background: bisque;
+    border: 1px solid red;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.person-p .info-icons ul li{
+    float: left;
+}
+.person-p .info-icons ul li+li{
+   padding-left: 2rem;
+
+}
+.person-p .info-icons .infor-icon a {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: url("../../imgs/icon/github.png") no-repeat;
+    background-size: cover;
+}
+
+.blog{
+    height: 100vh;
+    background: blue;
+    overflow:auto;
+}
