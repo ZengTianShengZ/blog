@@ -87,25 +87,88 @@
             </div>
 
 
-            <div class="col-sm-7   blog">
-                <ul>
-                    <li>dd</li>
-                    <li>ddd</li>
-                    <li>dddd</li>
-                    <li>dddd</li>
-                    <li>ddd</li>
-                    <li>ddddd</li>
-                </ul>
+            <div class="col-sm-7 blog">
+                <div class="blog-cont">
+
+                    <div class="blog-title clearfix">
+                        <h3 class="blog-title-h3 pull-left">追加大祭司时间</h3>
+                        <p class="bolg-time pull-right">2016年9月1 号</p>
+                    </div>
+                    <div class="clearfix">
+                        <div class="pull-right blog-img">
+                            <img src="../imgs/blog_tt.jpg" alt="">
+                        </div>
+                        <div class="pull-left blog-intor" >
+                            <p>渐进增强是先兼容低版本的浏览器进行开发，比如对 IE 8.。。让功能先能用了再对高版本的
+                                浏览器进行增加一些特性或功能，但一般呢不太推荐，为什么呢？
+                                对于一些小公司而已，如果对低版本开发，有时候产品还没做好就倒闭了。
+                                而 优雅降级 -- 是先对高版本的浏览器进行开发，然后针对低版本的浏览器删除一些不支持的
+                            </p>
+                        </div>
+                    </div>
+
+                    <div><a href="#">查看更多</a></div>
+                </div>
             </div>
         </div>
     </div>
 
 
 
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+    <script src="js/ejs.min.js"></script>
+
+
+    <script id="blogContent" type="text/template">
+        <% if (blogMessage.length) { %>
+
+            <% blogMessage.forEach(function(blog){ %>
+            <div class="blog-title clearfix">
+                <h3 class="blog-title-h3 pull-left"><%= blog.title %></h3>
+                <p class="bolg-time pull-right"><%= blog.time %></p>
+            </div>
+            <div class="clearfix">
+                <div class="pull-right blog-img">
+                    <img src="../imgs/blog_tt.jpg" alt="">
+                </div>
+                <div class="pull-left blog-intor" >
+                    <p><%= blog.bolgc %></p>
+                </div>
+            </div>
+
+            <div><a href="#">查看更多</a></div>
+            <% }) %>
+
+        <% } %>
+    </script>
+
+
+    <script>
+        onload = function(){
+            var blogHtml = document.getElementById('blogContent').innerHTML;
+            var blogMessage = [{
+                title:'就是觉得时间',
+                time:'23-232-232-0',
+                bolgc:'dsdsdsddfee',
+                imgUrl:'../imgs/blog_tt.jpg'
+            },{
+                title:'几点飞机对方的',
+                time:'232-43-11',
+                bolgc:'反对反对大幅度反对法大幅度大幅度反对法',
+                imgUrl:'../imgs/blog_tt.jpg'
+            },{
+                title:'是多少多少',
+                time:'2-2-3',
+                bolgc:'顶顶顶大苏打实打实大苏打实打实是',
+                imgUrl:'../imgs/blog_tt.jpg'
+            }];
+
+            var html = ejs.render(blogHtml, { blogMessage: blogMessage });
+
+            $('.blog-cont').html(html);
+        }
+    </script>
 
 </body>
-
-
-</html>
