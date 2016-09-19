@@ -5,20 +5,29 @@
   margin: 0;
 }
 body{
+
   /*小屏幕时去掉*/
   overflow: hidden;
   color: #DEDBD9;
   font-family: "KaiTi" ,STKaiti ,"楷体";
+  font-size: 1.6rem;
 }
 .person{
+  overflow-x: hidden;
+  overflow-y: scroll;
   height: 100vh;
   background :#646565 url("../../imgs/bigbg.jpg") no-repeat;
   background-size: cover;
 
 }
+/* for Chrome */
+.person::-webkit-scrollbar {
+  display: none;
+}
+
 .person-bg{
   width: 100%;
-  height: 100%;
+  height: 123%;
 
   border: 1px solid #646565;
   background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
@@ -85,6 +94,12 @@ body{
     top: 9rem;
     opacity: 1;
   }
+  .info-more{
+    position: absolute;
+    top: 12.5rem;
+    right: 2rem;
+    display: none;
+  }
 
 
   /*  my-info */
@@ -108,7 +123,7 @@ body{
 
   /*  about-me */
   .about-me{
-      width: 85%;
+      width: 100%;
       position: absolute;
       top: 20.5rem;
       left: 0;
@@ -118,17 +133,31 @@ body{
       transition :all 1s ease-out ;
 
 
-      h3{
-          text-align: center;
+      .about-me-title{
+        width: 100%;
+        padding: 0.6rem;
+        background-color: #FFF;
+        background-color:rgba(255,255,255,0.2);
+        text-align: center;
+        h4{
+          padding: 0;
+          margin: 0;
+        }
+        span{
+          font-size: 1.4rem;
+        }
       }
+
       p{
+        width: 85%;
+        margin: 0 auto;
         text-indent: 2rem;
       }
 
   }
   /*  about-me */
   .about-me-anim{
-    top: 16.5rem;
+    top: 18rem;
     opacity: 1;
   }
 
@@ -142,27 +171,112 @@ body{
     left: 0;
     right: 0;
     margin: 0 auto;
-    opacity: 0.5;
-    background: #000000;
+    background-color: #000;
+    background-color:rgba(0,0,0,0.6);
+
     transition :all 1s ease-out ;
 
+    .my-ability-c{
+      width: 100%;
+
+    }
+
+    .my-ability-title{
+      width: 15.5rem;
+      height: 3.2rem;
+      background: url("../../imgs/skill_img.png") no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+    }
 
     .mb-li-img{
+
       float: left;
-      width: 32.333%;
-      height: 9rem;
+      width: 18.6%;
+      height: 5rem;
       margin-top: 0.5rem;
       margin-left: 0.5rem;
       background: url("../../imgs/ac_img1.jpg") no-repeat;
       background-size: cover;
+
+
+    }
+
+    .my-ability-foot{
+      padding: 1rem;
+      font-size: 1.4rem;
+
     }
   }
   /*  my-ability */
   .my-ability-anim{
-    top: 30.5rem;
-    opacity: 0.5;
+    top: 34.5rem;
+    opacity: 1;
+  }
+
+  .person-foot{
+    position: absolute;
+    top: 53.5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
+
+/* person 的响应式布局 */
+/* 设置断点 */
+@media only screen and (max-width: 50em) {
+
+}
+
+@media only screen and (min-width: 46.875em) and (max-width: 78.125em) {
+  .person-p{
+    .my-info{
+      width: 90%;
+    }
+  }
+  .my-ability{
+    .my-ability-c{
+      .mb-li-img{
+        width: 18%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 33.125em) and (max-width: 46.775em) {
+  .my-ability{
+    .my-ability-c{
+      .mb-li-img{
+        width: 18.7%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 33.025em) {
+  body{
+    overflow: scroll;
+  }
+  .person{
+    height: 17.6rem;
+  }
+  .person-p{
+    .my-info,
+    .about-me,
+    .my-ability,
+    .person-foot{
+      display: none;
+    }
+
+    .info-more{
+      display: block;
+    }
+  }
+}
+
+
+
 
 .blog{
   height: 100vh;
