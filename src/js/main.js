@@ -76,13 +76,15 @@ var parseResponseData = function (response) {
         var url = response[i].url;
         /* 得到 */
         var up_day = response[i].updated_at;
-        up_day = up_day.slice(0,up_day.indexOf('T'));
+        up_day = formatGithubTime(up_day);
+        // up_day = up_day.slice(0,up_day.indexOf('T'));
         /* 得到 */
         var article =  response[i].body;
         var starT =  article.indexOf('<!--');
         var endT = article.indexOf('-->');
         var article_intor_str = '';
-        if(starT > 0 && endT > 0){
+
+        if(starT >= 0 && endT > 0){
             article_intor_str =  article.slice(starT+4,endT);
         } else{
             article_intor_str = response[i].title;
@@ -92,8 +94,15 @@ var parseResponseData = function (response) {
         var starImg =  article.indexOf('[image](');
         var endImg = article.indexOf('.png)');
         if(starImg > 0 && endImg > 0){
+
             titlt_img =  article.slice(starImg+8,endImg) + ".png";
-        } else{
+            console.log(titlt_img);
+        } else if(starImg > 0){
+
+            var endImg = article.indexOf('.jpg)');
+            titlt_img =  article.slice(starImg+8,endImg) + ".jpg";
+            console.log(titlt_img);
+        }else{
             titlt_img = "";
         }
         imgUrls.push(titlt_img);
@@ -107,34 +116,21 @@ var parseResponseData = function (response) {
         blogMessage.push(blog_obj);
     }
 
-
-/*
-    var img_flag = 0;
-    preprocessorImage({
-        dd:imgUrls,
-        callback:function (img_src) {
-            img_flag++;
-            console.log(img_flag+"........."+img_src);
-            //$('#img-div').html( '<img class="bg-img" src="'+  img_src +'" alt="">');
-        }
-    });
-*/
-
     var blogHtml = $('#blogContent').html();
     var html = ejs.render(blogHtml, { blogMessage: blogMessage });
 
     $('.blog-cont').html(html);
 
     var img_flag = 0;
+    // 颠倒数组
+    imgUrls.reverse();
     preprocessorImage({
         img_array:imgUrls,
         callback:function (img_src) {
             img_flag++;
             var img_str = '#blogImg'+img_flag;
-            console.log( ".....img_str...."+img_str);
             $(img_str).attr('src',img_src);
-            console.log(img_flag+"........."+img_src);
-            //$('#img-div').html( '<img class="bg-img" src="'+  img_src +'" alt="">');
+
         }
     });
 }
@@ -147,7 +143,22 @@ function preprocessorImage(obj) {
         images[i].onload = function ( ){
             obj.callback(this.src);
         };
-        console.log('......');
         images[i].src = img_array[i];
     }
+}
+
+//2016-09-09T07:42:46Z  将 github 的时间 换成 2016年9月9日 07:33
+var formatGithubTime = function (time_data) {
+
+    var days = time_data.slice(0,time_data.indexOf('T')),
+        day1 = days.slice(0,days.indexOf('-')),
+        day2 = days.slice(days.indexOf('-'),days.length),
+        xx = day2 .replace("-","年"),
+        cc = xx .replace("-","月"),
+        bb = cc.replace(/0/g,""),
+        pas1 = day1 + cc + '日',
+        pas2 =  time_data.slice(time_data.indexOf('T')+1,time_data.lastIndexOf(':') );
+
+    return pas1+" "+pas2;
+
 }

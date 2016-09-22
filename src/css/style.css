@@ -11,7 +11,7 @@ body{
 .person{
     height: 100vh;
     border: 1px solid #646565;
-    background :#646565 url("../../imgs/bigbg.jpg") no-repeat;
+    background :#646565 url("../../test/imgs/bigbg.jpg") no-repeat;
     background-size: cover;
 }
 .person-p{
@@ -20,7 +20,7 @@ body{
 .person-p .logo{
     width: 7.5rem;
     height: 7.5rem;
-    background: url("../../imgs/logo.jpg") no-repeat ;
+    background: url("../../test/imgs/logo.jpg") no-repeat ;
     background-size: cover;
     border: 2px solid #FFF;
     position: absolute;
@@ -81,7 +81,7 @@ body{
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background: url("../../imgs/icon/github.png") no-repeat;
+    background: url("../../test/imgs/icon/github.png") no-repeat;
     background-size: cover;
 }
 

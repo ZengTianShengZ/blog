@@ -50,7 +50,7 @@ body {
   .person-p .logo {
     width: 7.5rem;
     height: 7.5rem;
-    background: url("../../imgs/logo.jpg") no-repeat;
+    background: url("../imgs/logo.jpg") no-repeat;
     background-size: cover;
     border: 2px solid #FFF;
     position: absolute;
@@ -59,6 +59,7 @@ body {
     right: 0;
     margin: 0 auto;
     opacity: 0;
+    -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out; }
   .person-p .logo-anim {
     opacity: 1; }
@@ -71,17 +72,34 @@ body {
     /*margin: 0 auto; 必选设置宽高才有校*/
     margin: 0 auto;
     opacity: 0;
-    transition: all 1s ease-out; }
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    /*   .infor-icon a{
+         display: inline-block;
+         width: 2rem;
+         height: 2rem;
+         background: url("../../imgs/icon/github.png") no-repeat;
+         background-size: cover;
+       }*/ }
     .person-p .info-icons ul li {
       float: left; }
     .person-p .info-icons ul li + li {
       padding-left: 2rem; }
-    .person-p .info-icons .infor-icon a {
+    .person-p .info-icons .infor-icon .icon-a {
       display: inline-block;
-      width: 2rem;
-      height: 2rem;
-      background: url("../../imgs/icon/github.png") no-repeat;
-      background-size: cover; }
+      width: 20px;
+      height: 20px;
+      background: url("../imgs/pppp.png"); }
+    .person-p .info-icons .infor-icon .icon-a1 {
+      background-position: 0 bottom; }
+    .person-p .info-icons .infor-icon .icon-a2 {
+      background-position: -20px bottom; }
+    .person-p .info-icons .infor-icon .icon-a3 {
+      background-position: -40px bottom; }
+    .person-p .info-icons .infor-icon .icon-a4 {
+      background-position: -60px bottom; }
+    .person-p .info-icons .infor-icon .icon-a5 {
+      background-position: -80px bottom; }
   .person-p .info-icons-anim {
     top: 9rem;
     opacity: 1; }
@@ -96,8 +114,9 @@ body {
     top: 16.5rem;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: 1rem auto;
     opacity: 0;
+    -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out; }
   .person-p .my-info-anim {
     top: 11.5rem;
@@ -110,6 +129,7 @@ body {
     right: 0;
     margin: 0 auto;
     opacity: 0;
+    -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out; }
     .person-p .about-me .about-me-title {
       width: 100%;
@@ -138,37 +158,38 @@ body {
     opacity: 0;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
     /*
-          .md-li-img1 p{
-            top: 3rem;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            line-height: 5rem;
-            color: blue;
-            opacity: 0;
-            font-weight: bold;
+        .md-li-img1 p{
+          top: 3rem;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+          line-height: 5rem;
+          color: blue;
+          opacity: 0;
+          font-weight: bold;
 
-            transition :all 1s ease-out ;
+          transition :all 1s ease-out ;
+        }
+        .mb-li-img1:hover{
+          p{
+            top: 0rem;
+            opacity: 1;
           }
-          .mb-li-img1:hover{
-            p{
-              top: 0rem;
-              opacity: 1;
-            }
-            img{
-              transform: translate(0,0);
-            }
+          img{
+            transform: translate(0,0);
+          }
 
-          }*/ }
+        }*/ }
     .person-p .my-ability .my-ability-c {
       width: 100%; }
     .person-p .my-ability .my-ability-title {
       width: 15.5rem;
       height: 3.2rem;
-      background: url("../../imgs/skill_img.png") no-repeat;
+      background: url("../imgs/skill_img.png") no-repeat;
       background-size: cover;
       margin: 0 auto; }
     .person-p .my-ability .mb-li-img {
@@ -184,25 +205,61 @@ body {
         width: 100%;
         height: 100%;
         opacity: 1;
+        -webkit-transform: translate(1rem, 0);
         transform: translate(1rem, 0);
+        -webkit-transition: all 1s ease-out;
         transition: all 1s ease-out; }
+      .person-p .my-ability .mb-li-img .li-img-box {
+        width: 120%;
+        height: 100%;
+        opacity: 1;
+        background: url("../imgs/pppp.png");
+        -webkit-transform: translate(-1rem, 0);
+        transform: translate(-1rem, 0);
+        -webkit-transition: all 1s ease-out;
+        transition: all 1s ease-out; }
+      .person-p .my-ability .mb-li-img .li-img-box1 {
+        background-position: 0 0; }
+      .person-p .my-ability .mb-li-img .li-img-box2 {
+        background-position: -125px 0; }
+      .person-p .my-ability .mb-li-img .li-img-box3 {
+        background-position: -250px 0; }
+      .person-p .my-ability .mb-li-img .li-img-box4 {
+        background-position: -375px 0; }
+      .person-p .my-ability .mb-li-img .li-img-box5 {
+        background-position: -500px 0; }
+      .person-p .my-ability .mb-li-img .li-img-box6 {
+        background-position: -0px 90px; }
+      .person-p .my-ability .mb-li-img .li-img-box7 {
+        background-position: -125px 90px; }
+      .person-p .my-ability .mb-li-img .li-img-box8 {
+        background-position: -250px 90px; }
+      .person-p .my-ability .mb-li-img .li-img-box9 {
+        background-position: -375px 90px; }
+      .person-p .my-ability .mb-li-img .li-img-box10 {
+        background-position: -500px 90px; }
       .person-p .my-ability .mb-li-img p {
         position: absolute;
         text-align: center;
         line-height: 5rem;
         color: #FFF;
+        -webkit-transition: all 1s ease-out;
         transition: all 1s ease-out; }
-    .person-p .my-ability .md-li-img1 p {
-      top: 3rem;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0; }
+    .person-p .my-ability .md-li-img1 {
+      /* .........................*/
+      /* .........................*/ }
+      .person-p .my-ability .md-li-img1 p {
+        top: 3rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0; }
     .person-p .my-ability .md-li-img1:hover p {
       top: 0;
       opacity: 1; }
-    .person-p .my-ability .md-li-img1:hover img {
-      opacity: 0.4;
+    .person-p .my-ability .md-li-img1:hover .li-img-box1 {
+      opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img2 p {
       top: 0;
@@ -210,12 +267,15 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: rotate(360deg);
       transform: rotate(360deg); }
     .person-p .my-ability .md-li-img2:hover p {
       opacity: 1;
+      -webkit-transform: rotate(0deg);
       transform: rotate(0deg); }
-    .person-p .my-ability .md-li-img2:hover img {
+    .person-p .my-ability .md-li-img2:hover .li-img-box2 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img3 p {
       top: 0;
@@ -223,12 +283,15 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: skew(90deg);
       transform: skew(90deg); }
     .person-p .my-ability .md-li-img3:hover p {
       opacity: 1;
+      -webkit-transform: skew(0deg);
       transform: skew(0deg); }
-    .person-p .my-ability .md-li-img3:hover img {
+    .person-p .my-ability .md-li-img3:hover .li-img-box3 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img4 p {
       top: 0;
@@ -236,6 +299,7 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: scale(1.5, 1.5);
       transform: scale(1.5, 1.5); }
     .person-p .my-ability .md-li-img4 .div-aim {
       position: absolute;
@@ -248,15 +312,20 @@ body {
       margin: auto auto;
       border: 1px solid #FFF;
       opacity: 0;
+      -webkit-transform: scale(0.6, 0.6);
       transform: scale(0.6, 0.6);
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out; }
     .person-p .my-ability .md-li-img4:hover p {
       opacity: 1;
+      -webkit-transform: scale(1, 1);
       transform: scale(1, 1); }
-    .person-p .my-ability .md-li-img4:hover img {
+    .person-p .my-ability .md-li-img4:hover .li-img-box4 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img4:hover .div-aim {
+      -webkit-transform: scale(1, 1);
       transform: scale(1, 1);
       opacity: 1; }
     .person-p .my-ability .md-li-img5 p {
@@ -265,6 +334,7 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: scale(1.5, 1.5);
       transform: scale(1.5, 1.5); }
     .person-p .my-ability .md-li-img5 .div-aim2 {
       position: absolute;
@@ -275,16 +345,22 @@ body {
       height: 90%;
       margin: auto auto;
       background: #b3d4fc;
+      -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out;
+      -webkit-transform-origin: left top;
       transform-origin: left top; }
     .person-p .my-ability .md-li-img5:hover p {
       opacity: 1;
+      -webkit-transform: scale(1, 1);
       transform: scale(1, 1); }
-    .person-p .my-ability .md-li-img5:hover img {
+    .person-p .my-ability .md-li-img5:hover .li-img-box5 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img5:hover .div-aim2 {
+      -webkit-transform: rotate(-10deg);
       transform: rotate(-10deg);
       opacity: 1; }
     .person-p .my-ability .md-li-img6 p {
@@ -293,6 +369,7 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: scale(0.5, 0.5);
       transform: scale(0.5, 0.5); }
     .person-p .my-ability .md-li-img6 .div-aim3-1 {
       position: absolute;
@@ -304,7 +381,9 @@ body {
       margin: auto auto;
       border: 1px solid #FFF;
       opacity: 0;
+      -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out; }
     .person-p .my-ability .md-li-img6 .div-aim3-2 {
       position: absolute;
@@ -316,18 +395,24 @@ body {
       margin: auto auto;
       border: 1px solid #FFF;
       opacity: 0;
+      -webkit-transform: rotate(270deg);
       transform: rotate(270deg);
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out; }
     .person-p .my-ability .md-li-img6:hover p {
       opacity: 1;
+      -webkit-transform: scale(1, 1);
       transform: scale(1, 1); }
-    .person-p .my-ability .md-li-img6:hover img {
+    .person-p .my-ability .md-li-img6:hover .li-img-box6 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img6:hover .div-aim3-1 {
+      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
       opacity: 1; }
     .person-p .my-ability .md-li-img6:hover .div-aim3-2 {
+      -webkit-transform: rotate(135deg);
       transform: rotate(135deg);
       opacity: 1; }
     .person-p .my-ability .md-li-img7 p {
@@ -336,6 +421,7 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: scale(0.5, 0.5);
       transform: scale(0.5, 0.5); }
     .person-p .my-ability .md-li-img7 .div-aim4-1 {
       position: absolute;
@@ -348,7 +434,9 @@ body {
       border-top: 1px solid #FFF;
       border-bottom: 1px solid #FFF;
       opacity: 0;
+      -webkit-transform: translate(100%, 0);
       transform: translate(100%, 0);
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out; }
     .person-p .my-ability .md-li-img7 .div-aim4-2 {
       position: absolute;
@@ -361,18 +449,24 @@ body {
       border-left: 1px solid #FFF;
       border-right: 1px solid #FFF;
       opacity: 0;
+      -webkit-transform: translate(0, -100%);
       transform: translate(0, -100%);
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out; }
     .person-p .my-ability .md-li-img7:hover p {
       opacity: 1;
+      -webkit-transform: scale(1, 1);
       transform: scale(1, 1); }
-    .person-p .my-ability .md-li-img7:hover img {
+    .person-p .my-ability .md-li-img7:hover .li-img-box7 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img7:hover .div-aim4-1 {
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0);
       opacity: 1; }
     .person-p .my-ability .md-li-img7:hover .div-aim4-2 {
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0);
       opacity: 1; }
     .person-p .my-ability .md-li-img8 p {
@@ -381,6 +475,7 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: scale(0.5, 0.5);
       transform: scale(0.5, 0.5); }
     .person-p .my-ability .md-li-img8 .div-aim5-1 {
       position: absolute;
@@ -392,7 +487,9 @@ body {
       margin: auto auto;
       border-bottom: 1px solid #FFF;
       opacity: 0;
+      -webkit-transform: translate(0, 100%);
       transform: translate(0, 100%);
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out; }
     .person-p .my-ability .md-li-img8 .div-aim5-2 {
       position: absolute;
@@ -404,19 +501,25 @@ body {
       margin: auto auto;
       border-bottom: 1px solid #FFF;
       opacity: 0;
+      -webkit-transform: translate(10%, -100%);
       transform: translate(10%, -100%);
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out; }
     .person-p .my-ability .md-li-img8:hover p {
       top: 0.5rem;
       opacity: 1;
+      -webkit-transform: scale(1, 1);
       transform: scale(1, 1); }
-    .person-p .my-ability .md-li-img8:hover img {
+    .person-p .my-ability .md-li-img8:hover .li-img-box8 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img8:hover .div-aim5-1 {
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0);
       opacity: 1; }
     .person-p .my-ability .md-li-img8:hover .div-aim5-2 {
+      -webkit-transform: translate(10%, 0);
       transform: translate(10%, 0);
       opacity: 1; }
     .person-p .my-ability .md-li-img9 p {
@@ -425,12 +528,15 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: skew(90deg);
       transform: skew(90deg); }
     .person-p .my-ability .md-li-img9:hover p {
       opacity: 1;
+      -webkit-transform: skew(0deg);
       transform: skew(0deg); }
-    .person-p .my-ability .md-li-img9:hover img {
+    .person-p .my-ability .md-li-img9:hover .li-img-box9 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .md-li-img10 p {
       top: 0;
@@ -438,22 +544,25 @@ body {
       left: 0;
       right: 0;
       opacity: 0;
+      -webkit-transform: translate(-100%, 0);
       transform: translate(-100%, 0); }
     .person-p .my-ability .md-li-img10:hover p {
       opacity: 1;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
-    .person-p .my-ability .md-li-img10:hover img {
+    .person-p .my-ability .md-li-img10:hover .li-img-box10 {
       opacity: 0.5;
+      -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
     .person-p .my-ability .my-ability-foot {
       padding: 1rem;
       font-size: 1.4rem; }
   .person-p .my-ability-anim {
-    top: 34.5rem;
+    top: 37.5rem;
     opacity: 1; }
   .person-p .person-foot {
     position: absolute;
-    top: 53.5rem;
+    top: 56.5rem;
     left: 0;
     right: 0;
     text-align: center; }
@@ -467,6 +576,8 @@ body {
     width: 18%; } }
 
 @media only screen and (min-width: 33.125em) and (max-width: 46.775em) {
+  body {
+    overflow: scroll; }
   .my-ability .my-ability-c .mb-li-img {
     width: 18.7%; } }
 

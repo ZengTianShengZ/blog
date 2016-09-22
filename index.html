@@ -6,194 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable = no">
     <title>ZengTianShengZ Blog</title>
 
-  <!-- 项目提交到分支 gh-pages ;    访问链接 --》 https://zengtianshengz.github.io/blog/   -->
-
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/index.css">
-    <style type="text/css">
-
-    </style>
+    <link type="text/css" rel="stylesheet" href="src/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="src/css/bootstrap-theme.css">
+    <link type="text/css" rel="stylesheet" href="src/css/Normalize.css">
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
 
 </head>
 <body>
 
-    <div class="container-fluid">
+    <div class="z-blog">
         <div class="row">
+            <div class="col-sm-5   person" id="person">
+                <div class="person-bg ">
+                    <div class="person-p ">
 
 
-            <div  class="col-md-5 person-box">
+                        <h2><a href="#"><img class="img-circle logo" id="logo"  ></a></h2>
+                        <div class="info-icons " id="infoIcons">
+                            <ul>
+                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a1"></a></li>
+                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a2"></a></li>
+                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a3"></a></li>
+                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a4"></a></li>
+                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a5"></a></li>
+                            </ul>
 
-                <div  id="person-info">
-
-                    <div >
-                        <div class="logo_box">
-                            <h2 class="logo-h2"><a href="#"><img src="imgs/logo.jpg" class="img-circle logo" alt=""></a></h2>
-                            <img src="imgs/gif_img1.gif" class="img-circle logo log_gif" alt="">
                         </div>
-                        
-                        <div class="infor-icon">
-                            <a href="#">
-                                <img src="imgs/icon/weibo.png" alt="微博"
-                                     title="曾田生"
-                                     data-trigger="hover"
-                                     data-toggle="popover"
-                                     data-placement="bottom"
-                                     data-content="一个说故事的人"
-                                     class="popover-show">
-                            </a>
-                            <a href="#">
-                                <img src="imgs/icon/sf.png" alt="segmentFault"
-                                     title="segmentFault &#45;&#45; 技术博客"
-                                     data-trigger="hover"
-                                     data-toggle="popover"
-                                     data-placement="bottom"
-                                     data-content="好记性不如烂笔头，记录了一些学习笔记和学习心得"
-                                     class="popover-show"
-                                >
-                            </a>
-                            <a href="#">
-                                <img src="imgs/icon/zhihu.png" alt="知乎"
-                                     title="知乎"
-                                     data-trigger="hover"
-                                     data-toggle="popover"
-                                     data-placement="bottom"
-                                     data-content="知乎"
-                                     class="popover-show"
-                                >
+                        <p class="info-more"><a href="#">查看更多>></a></p>
+                        <div class="my-info" id="myInfo">
+                            <div class="clearfix">
+                                <h5 class="pull-left"> <span class="glyphicon glyphicon-flag"></span> 毕业院校：华侨大学下面工学院</h5>
+                                <h5 class="pull-right"> <span class="glyphicon glyphicon-home"></span> 户 籍 地：福建漳州</h5>
+                            </div>
+                            <div>
+                                <h5 class="pull-left"> <span class="glyphicon glyphicon-heart-empty"></span>  兴趣爱好：音乐、旅游、编程</h5>
+                                <h5 class="pull-right"><span class="glyphicon glyphicon-map-marker"></span> 现&nbsp;&nbsp;居：杭州 - 余杭</h5>
+                            </div>
+                        </div>
+                        <div class="about-me" id="aboutMe">
+                            <div class="about-me-title">
+                                <h4>About Me</h4>
+                                <span>关于我</span>
+                            </div>
+                            <p>2016年7月毕业于华侨大学厦门工学院，大四下学期实习于厦门星罗科技网络公司，从事Android开发。工作期间，主要负责公司产品‘魔力相册’的迭代开发，查找并修复Bug,并参与讨论产品的交互设计。 </p>
+                            <p>毕业后因个人原因离职，此后开始自学前端开发，有 ‘轻量级DOM操作库’、‘jQuery-roll轮番图插件’等项目。</p>
 
-                            </a>
-                            <a href="#">
-                                <img src="imgs/icon/github.png" alt="github"
-                                     title="github"
-                                     data-trigger="hover"
-                                     data-toggle="popover"
-                                     data-placement="bottom"
-                                     data-content="Followers：4   Starred：46 Following：6"
-                                     class="popover-show"
-                                >
-                            </a>
-                            <a href="#">
-                                <img src="imgs/icon/email.png" alt="联系方式"
-                                     title="联系方式"
-                                     data-trigger="hover"
-                                     data-toggle="popover"
-                                     data-placement="bottom"
-                                     data-content="Email:zengtianshengz@163.com
-                                                Tel : 131616500494"
-                                     class="popover-show"
-                                >
+                        </div>
+                        <div class="my-ability " id="myAbility">
+                            <div class="my-ability-c">
+                                <div class="my-ability-title">
 
-                            </a>
+                                </div>
+                                <div>
+                                    <ul class="clearfix">
+                                        <li class = 'mb-li-img md-li-img1'><div class = "li-img-box li-img-box1"></div><p>熟悉html</p></li>
+                                        <li class = 'mb-li-img md-li-img2'><div class = "li-img-box li-img-box2"></div><p>熟悉css</p></li>
+                                        <li class = 'mb-li-img md-li-img3'><div class = "li-img-box li-img-box3"></div><p>熟悉js</p></li>
+                                        <li class = 'mb-li-img md-li-img4'><div class = "li-img-box li-img-box4"></div><p>熟悉gulp构建<br>工具</p><div class="div-aim"></div></li>
+                                        <li class = 'mb-li-img md-li-img5'><div class = "li-img-box li-img-box5"></div><p>了解bootstrap</p><div class="div-aim2"></div></li>
+                                        <li class = 'mb-li-img md-li-img6'><div class = "li-img-box li-img-box6"></div><p>熟悉jquery</p><div class="div-aim3-1"></div><div class="div-aim3-2"></div></li>
+                                        <li class = 'mb-li-img md-li-img7'><div class = "li-img-box li-img-box7"></div><p>了解响应式布局</p><div class="div-aim4-1"></div><div class="div-aim4-2"></div></li>
+                                        <li class = 'mb-li-img md-li-img8'><div class = "li-img-box li-img-box8"></div><p>了解ES6新特性</p><div class="div-aim5-1"></div><div class="div-aim5-2"></div></li>
+                                        <li class = 'mb-li-img md-li-img9'><div class = "li-img-box li-img-box9"></div><p>属性Android原生开发</p></li>
+                                        <li class = 'mb-li-img md-li-img10'><div class = "li-img-box li-img-box10"></div><p>查看更多>></p></li>
+                                    </ul>
+                                </div>
+                                <div class="my-ability-foot">
+                                    <p class="pull-right"> 查看更多>></p>
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class="person-foot">
+                            <p>© Dandy's Blog 2016.9.19 </p>
+                            <p>Powered by WordPress. Designed and developed by Dandy Weng.</p>
+                        </div>
+
+                     </div>
+                </div>
+            </div>
 
 
+            <div class="col-sm-7 blog">
+
+                <div class="blog-cont">
+
+<!--
+
+                    <div class="blog-title clearfix">
+                        <h3 class="blog-title-h3 pull-left">追加大祭司时间</h3>
+                        <p class="bolg-time pull-right">2016年9月1 号</p>
+                    </div>
+                    <div class="clearfix blog-box">
+                        <div class="pull-right blog-img">
+                            <img src="../imgs/blog_tt.jpg" alt="">
+                        </div>
+                        <div class="pull-left blog-intor" >
+                            <p>渐进增强是先兼容低版本的浏览器进行开发，比如对 IE 8.。。让功能先能用了再对高版本的
+                                浏览器进行增加一些特性或功能，但一般呢不太推荐，为什么呢？
+                                对于一些小公司而已，如果对低版本开发，有时候产品还没做好 浏览器删除一些不支持的
+                            </p>
+                            <p><a href="#">查看更多</a></p>
                         </div>
                     </div>
 
+-->
 
-                    <div class="per-detial-info">
-                        <div class="per-info1">
-                            <h5 class="pull-left"> <span class="glyphicon glyphicon-flag"></span> 毕业院校：华侨大学下面工学院</h5>
-                            <h5 class="pull-right"> <span class="glyphicon glyphicon-home"></span> 户 籍 地：福建漳州</h5>
-                        </div>
-                        <div class="per-info1">
-                            <h5 class="pull-left"> <span class="glyphicon glyphicon-heart-empty"></span>  兴趣爱好：音乐、旅游、编程</h5>
-                            <h5 class="pull-right"><span class="glyphicon glyphicon-map-marker"></span> 现&nbsp;&nbsp;居：杭州 - 余杭</h5>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
 
-                    <div class="about-me">
-                        <h4>ABOUT ME</h4>
-                        <p>&nbsp;&nbsp; 2016年7月毕业于华侨大学厦门工学院，大四下学期实习于厦门星罗科技网络公司，从事Android开发。工作期间，主要负责公司产品‘魔力相册’的迭代开发，查找并修复Bug,并参与讨论产品的交互设计。 </p>
-                        <p>&nbsp;&nbsp;毕业后因个人原因离职，此后开始自学前端开发，有 ‘轻量级DOM操作库’、‘jQuery-roll轮番图插件’等项目。</p>
-
-                    </div>
-
-                    <div class="per-ability">
-
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#li1" data-toggle="tab">前端项目一</a></li>
-                            <li><a href="#li2" data-toggle="tab">前端项目二</a></li>
-                            <li><a href="#li3" data-toggle="tab">前端项目三</a></li>
-                            <li><a href="#li4" data-toggle="tab">公司实习</a></li>
-                        </ul>
-                        <div class="tab-content" >
-                            <div class="tab-pane fade in active " id="li1">
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-
-                            </div>
-                            <div class="tab-pane fade  " id="li2">
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-
-                            </div>
-                            <div class="tab-pane fade " id="li3">
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-
-                            </div>
-                            <div class="tab-pane fade" id="li4">
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-                                <p>ne飞机就死覅经济祭祀发动机技术飞机ijdd就死机当今四大基石纠结死死就点击d</p>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
-            </div>
-
-            <div id="blog" class="col-md-7">
-<!--
-               <div class="blog-content">
-
-                   <div class="row">
-                       <div class="col-md-7 blog-atc">
-                           <h3 class="blog-title"><a class="blog_url" href="blog.html?xxx=vvv"><strong>媒体媒体标题媒体标题标题</strong></a></h3>
-                           <p> 是第四季第祭大家说的是大家说说大家说的是祭大家说的是大家说说大家说的是祭大家说的是大家说说大家说的是祭大家说的是大家说说大家说的是第四季第祭说的是第四季第祭祀的季大家说说大家说的是第四季第祭祀的季大家说说大家说的是第四季第祭祀的季四季第祭祀的季节</p>
-                            <p><span>2013 年 7 月 27 </span> <a  class="pull-right blog_url" href="#">点击查看全部内容</a></p>
-                       </div>
-                       <div class="col-md-5">
-                           <div class="thumbnail blog-img">
-                               <img src="imgs/ar_bg.jpg" alt="">
-                           </div>
-                       </div>
-                   </div>
-
-                </div>-->
 
             </div>
-
-
         </div>
     </div>
 
 
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-  <!--  <script src="js/options.js"></script>
-    <script src="js/showdown.js"></script>-->
-    <script src="https://cdn.bootcss.com/showdown/1.3.0/showdown.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/ejs.min.js"></script>
 
-    <script>
+    <script src="src/js/main.js" ></script>
 
 
+    <script id="blogContent" type="text/template">
+        <% if (blogMessage.length) { %>
 
+            <% blogMessage.forEach(function(blog){ %>
+            <div class="blog-title clearfix">
+                <h3 class="blog-title-h3 pull-left"><%= blog.titles %></h3>
+                <p class="bolg-time pull-right"><%= blog.updated_at %></p>
+            </div>
+            <div class="clearfix">
+                <div class="pull-right blog-img">
+                    <img src="src/imgs/blog_tt.jpg" id='blogImg<%= blog.url_id %>' alt="">
+                </div>
+                <div class="pull-left blog-intor" >
+                    <p><%= blog.article_intor %></p>
+                    <p><a target="_blank" href='blog.html?<%= blog.url_id %>'>查看更多</a></p>
+                </div>
+            </div>
+            <% }) %>
+
+        <% } %>
     </script>
 
 </body>
