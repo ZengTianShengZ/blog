@@ -1,7 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00cd557d-e5ac-4166-a3fb-806a0e47174f" name="Default" comment="" />
+    <list default="true" id="00cd557d-e5ac-4166-a3fb-806a0e47174f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/douban_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/ad_d_hf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/ad_em.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/ad_jg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/ad_zg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/app_logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/bgg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/ciyt_c_img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/context_img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/douban.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/group_img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/hangfu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/head_banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/hot_content_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/hot_content_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/hot_content_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/hot_content_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_hot_group_9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_local_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_local_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_local_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_local_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_movie_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_movie_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_movie_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_movie_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_movie_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_movie_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_movie_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_movie_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_mu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_music_c1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_music_c2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_music_c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_music_c4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_music_c5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_music_c6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_music_c7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_music_c8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_readding_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_readding_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_readding_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_readding_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_readding_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_readding_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_readding_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/img_readding_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/m_r_img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/move_img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/music_img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/new_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/reading_book.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/reweima.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/search_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/start_img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/weibo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/wrapper_app.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/yike_app.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/去squs1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/火狐截图_2016-08-07T06-54-03.761Z.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/img/火狐截图_2016-08-08T14-48-07.605Z.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/respondwebpage/doub/public_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/css/combined-b841b46384.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/fonts/ufonts.com_tw-cen-mt.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/images/my/blog-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/images/my/my-foto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resume/dist/js/combined-d7a8adc30a.js" afterPath="" />
+    </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,7 +114,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
@@ -34,6 +125,36 @@
                 <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#7121#7128#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="combined-b841b46384.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resume/css/combined-b841b46384.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/respondwebpage/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resume/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -356,6 +477,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="respondwebpage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -374,15 +523,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\WebPoj\github-blog\blog\test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\WebPoj\github-blog\blog\resume" />
       <recent name="G:\WebPoj\github-blog\blog\src" />
       <recent name="G:\WebPoj\github-blog\blog\src\js" />
       <recent name="G:\WebPoj\github-blog\blog\src\imgs" />
       <recent name="G:\WebPoj\github-blog\blog\src\css" />
-      <recent name="G:\WebPoj\github-blog\blog" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\WebPoj\github-blog\blog\test" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.tt.js">
@@ -476,12 +625,12 @@
       <workItem from="1474427644598" duration="21047000" />
       <workItem from="1474506065825" duration="17333000" />
       <workItem from="1474593909085" duration="41000" />
-      <workItem from="1474600461209" duration="1410000" />
+      <workItem from="1474600461209" duration="1601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129749000" />
+    <option name="totallyTimeSpent" value="129940000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,7 +642,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -502,7 +651,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14617941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47342193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -531,26 +680,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/imgs/skill_img.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-516">
-          <caret line="6064" column="16" selection-start-line="6064" selection-start-column="16" selection-end-line="6064" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/sectional.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../fxtraining/src/pages/tag/tpl/tag.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -837,6 +966,30 @@
             <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#7121#7128#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/css/combined-b841b46384.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/respondwebpage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
