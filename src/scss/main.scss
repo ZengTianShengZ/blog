@@ -63,7 +63,25 @@ body{
     opacity: 1;
   }
 
+  .er-img{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    background: #FFF url("../imgs/er.png") no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    -webkit-transition: all 1s ease-out ;
+    transition :all 0.6s ease-out ;
+  }
 
+  .er-img:hover{
+    width: 7rem;
+    height: 7rem;
+    background: #FFF url("../imgs/er_big.png") no-repeat;
+    background-size: cover;
+  }
 
   /*  info-icons  */
   .info-icons{
