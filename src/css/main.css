@@ -599,6 +599,8 @@ body {
   overflow: auto;
   color: #555555;
   padding: 2rem; }
+  .blog .blog-box {
+    width: 100%; }
   .blog .blog-title .bolg-time {
     margin-top: 2rem; }
   .blog .blog-img {
@@ -612,10 +614,20 @@ body {
     width: 50%;
     padding: 1rem; }
 
+.modal-body-tex h4 {
+  color: #333; }
+
 /* blog 的响应式布局 */
 /* 设置断点 */
 @media only screen and (max-width: 33.025em) {
-  .blog .blog-img {
-    width: 100%; }
-  .blog .blog-intor {
-    width: 100%; } }
+  .blog {
+    font-size: 1.4rem;
+    padding: 10px; }
+    .blog .blog-box {
+      box-shadow: 0 0 8px #ccc;
+      padding: 10px;
+      margin: 20px 0; }
+    .blog .blog-img {
+      width: 100%; }
+    .blog .blog-intor {
+      width: 100%; } }

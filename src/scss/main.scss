@@ -806,6 +806,10 @@ body{
   color: #555555;
   padding: 2rem;
 
+  .blog-box{
+    width: 100%;
+  }
+
   .blog-title{
 
     .blog-title-h3{
@@ -836,6 +840,10 @@ body{
 
 }
 
+.modal-body-tex h4{
+  color: #333;
+}
+
 /* blog 的响应式布局 */
 /* 设置断点 */
 @media only screen and (max-width: 50em) {
@@ -852,6 +860,15 @@ body{
 
 @media only screen and (max-width: 33.025em) {
   .blog{
+
+    font-size: 1.4rem;
+    padding: 10px;
+
+    .blog-box{
+      box-shadow: 0 0 8px #ccc;
+      padding: 10px;
+      margin: 20px 0;
+    }
 
     .blog-img{
       width: 100%;

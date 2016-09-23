@@ -3,6 +3,8 @@
  */
 $(function () {
 
+
+
     // 图片预加载 ！
     var bg_img = new Image();
     bg_img.onload = function ()
@@ -11,7 +13,7 @@ $(function () {
         // 当背景可见时 在 将内容动画显示出来
         afterBgImgVisibleAnimat();
     }
-    bg_img.src ='https://raw.githubusercontent.com/ZengTianShengZ/blog/gh-pages/imgs/left_bg2.jpg';
+    bg_img.src ='https://raw.githubusercontent.com/ZengTianShengZ/blog/gh-pages/test/imgs/left_bg2.jpg';
 
 
     $.ajax({
@@ -84,6 +86,10 @@ var parseResponseData = function (response) {
         var endT = article.indexOf('-->');
         var article_intor_str = '';
 
+        url_id.push(url.slice( url.lastIndexOf('/')+1 ,url.length));
+
+
+
         if(starT >= 0 && endT > 0){
             article_intor_str =  article.slice(starT+4,endT);
         } else{
@@ -96,12 +102,12 @@ var parseResponseData = function (response) {
         if(starImg > 0 && endImg > 0){
 
             titlt_img =  article.slice(starImg+8,endImg) + ".png";
-            console.log(titlt_img);
+
         } else if(starImg > 0){
 
             var endImg = article.indexOf('.jpg)');
             titlt_img =  article.slice(starImg+8,endImg) + ".jpg";
-            console.log(titlt_img);
+
         }else{
             titlt_img = "";
         }
@@ -124,11 +130,13 @@ var parseResponseData = function (response) {
     var img_flag = 0;
     // 颠倒数组
     imgUrls.reverse();
+    url_id.reverse();
     preprocessorImage({
         img_array:imgUrls,
         callback:function (img_src) {
             img_flag++;
-            var img_str = '#blogImg'+img_flag;
+            var img_str = '#blogImg'+url_id[img_flag-1];
+            console.log(img_str+'..............'+img_src);
             $(img_str).attr('src',img_src);
 
         }

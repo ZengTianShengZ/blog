@@ -19,16 +19,14 @@
             <div class="col-sm-5   person" id="person">
                 <div class="person-bg ">
                     <div class="person-p ">
-
-
                         <h2><a href="#"><img class="img-circle logo" id="logo"  ></a></h2>
                         <div class="info-icons " id="infoIcons">
                             <ul>
-                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a1"></a></li>
-                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a2"></a></li>
-                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a3"></a></li>
-                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a4"></a></li>
-                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a5"></a></li>
+                                <li class = "infor-icon"><a href="#" class = "icon-a icon-a1" data-toggle="modal" data-target="#myModal"></a></li>
+                                <li class = "infor-icon"><a target="_blank" href="https://github.com/ZengTianShengZ" class = "icon-a icon-a2"></a></li>
+                                <li class = "infor-icon"><a target="_blank" href="https://segmentfault.com/u/zss" class = "icon-a icon-a3"></a></li>
+                                <li class = "infor-icon"><a target="_blank" href="http://weibo.com/u/2876232957?refer_flag=1001030101_" class = "icon-a icon-a4"></a></li>
+                                <li class = "infor-icon"><a target="_blank" href="https://www.zhihu.com/people/ceng-tian-sheng" class = "icon-a icon-a5"></a></li>
                             </ul>
 
                         </div>
@@ -40,7 +38,7 @@
                             </div>
                             <div>
                                 <h5 class="pull-left"> <span class="glyphicon glyphicon-heart-empty"></span>  兴趣爱好：音乐、旅游、编程</h5>
-                                <h5 class="pull-right"><span class="glyphicon glyphicon-map-marker"></span> 现&nbsp;&nbsp;居：杭州 - 余杭</h5>
+                                <h5 class="pull-right"><span class="glyphicon glyphicon-map-marker"></span> 现&nbsp;居：杭州 - 余杭</h5>
                             </div>
                         </div>
                         <div class="about-me" id="aboutMe">
@@ -78,8 +76,8 @@
 
                         </div>
                         <div class="person-foot">
-                            <p>© Dandy's Blog 2016.9.19 </p>
-                            <p>Powered by WordPress. Designed and developed by Dandy Weng.</p>
+                            <p>© ZTS's Blog 2016.9.19 </p>
+                            <p>Designed and developed by ZengTianShengZ.</p>
                         </div>
 
                      </div>
@@ -121,8 +119,34 @@
     </div>
 
 
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-body-tex">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        曾思胜的联系方式
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div >
+                        <h4> 联系电话：13616500494</h4>
+                        <h4> 联系邮箱：zengtianshengz@163.com</h4>
+                        <h4> 联系邮箱：2292800085@qq.com</h4>
+                    </div>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
 
     <script src="src/js/jquery.js"></script>
+    <script src="src/js/bootstrap.js"></script>
+
     <script src="src/js/ejs.min.js"></script>
 
     <script src="src/js/main.js" ></script>
@@ -132,6 +156,8 @@
         <% if (blogMessage.length) { %>
 
             <% blogMessage.forEach(function(blog){ %>
+
+        <div class = 'blog-box'>
             <div class="blog-title clearfix">
                 <h3 class="blog-title-h3 pull-left"><%= blog.titles %></h3>
                 <p class="bolg-time pull-right"><%= blog.updated_at %></p>
@@ -145,6 +171,7 @@
                     <p><a target="_blank" href='blog.html?<%= blog.url_id %>'>查看更多</a></p>
                 </div>
             </div>
+        </div>
             <% }) %>
 
         <% } %>
