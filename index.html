@@ -45,7 +45,7 @@
                                 <span>关于我</span>
                             </div>
                             <p>2016年7月毕业于华侨大学厦门工学院，大四下学期实习于厦门星罗科技网络公司，从事Android开发。工作期间，主要负责公司产品‘魔力相册’的迭代开发，查找并修复Bug,并参与讨论产品的交互设计。 </p>
-                            <p>毕业后因个人原因离职，此后开始自学前端开发，有 ‘轻量级DOM操作库’、‘jQuery-roll轮番图插件’等项目。</p>
+                            <p>毕业后因个人原因离职，此后开始自学前端开发，有 ‘轻量级DOM操作库’、‘jQuery-roll轮播图插件’等项目。</p>
 
                         </div>
                         <div class="my-ability " id="myAbility">
@@ -151,7 +151,7 @@
 
         <div class = 'blog-box'>
             <div class="blog-title clearfix">
-                <h3 class="blog-title-h3 pull-left"><%= blog.titles %></h3>
+                <h3 class="blog-title-h3 pull-left"><a target="_blank" href='blog.html?<%= blog.url_id %>'><%= blog.titles %></a> </h3>
                 <p class="bolg-time pull-right"><%= blog.updated_at %></p>
             </div>
             <div class="clearfix">
