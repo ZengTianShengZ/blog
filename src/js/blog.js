@@ -41,9 +41,17 @@ var parseResponseData = function (response) {
     }
     article_body = article_body.slice(endT+5);
 
+
     console.log( title  );
     console.log( updated_at  );
     console.log( titlt_img  );
+
+    if(title){
+        document.title = title;
+    }else {
+        document.title = "ZengTianShengZ-blog";
+    }
+
 
     // 图片预加载 ！
     var bg_img = new Image();
@@ -52,6 +60,7 @@ var parseResponseData = function (response) {
 
             $('.blog-titlt').html(title);
             $('.blog-titlt').addClass('blog-titlt-anim');
+            $('.loading-box').css('display',"none");
         });
 
     }
@@ -64,7 +73,11 @@ var parseResponseData = function (response) {
     var converter = new showdown.Converter();
     var text      =  article_body,
         html      = converter.makeHtml(text);
-    $('.blog-article').html(html);
+   $('.blog-article').html(html);
+
+
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 
 }
 

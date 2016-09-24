@@ -50,7 +50,7 @@ body {
   .person-p .logo {
     width: 7.5rem;
     height: 7.5rem;
-    background: url("../imgs/logo.jpg") no-repeat;
+    background: url("../imgs/loading_img.gif") no-repeat;
     background-size: cover;
     border: 2px solid #FFF;
     position: absolute;
@@ -58,9 +58,11 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out; }
+
+
   .person-p .logo-anim {
     opacity: 1; }
   .person-p .er-img {
@@ -163,7 +165,7 @@ body {
       margin: 0 auto;
       text-indent: 2rem; }
   .person-p .about-me-anim {
-    top: 18rem;
+    top: 20rem;
     opacity: 1; }
   .person-p .my-ability {
     position: absolute;

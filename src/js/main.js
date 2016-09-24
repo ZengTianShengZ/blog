@@ -9,13 +9,21 @@ $(function () {
     var bg_img = new Image();
     bg_img.onload = function ()
     {
-        $('#person').css('background-image','url('+bg_img.src+')' );
-        // 当背景可见时 在 将内容动画显示出来
-        afterBgImgVisibleAnimat();
+        var logo_mg = new Image();
+        logo_mg.onload = function () {
+
+            $('#logo').css('background-image','url('+logo_mg.src+')' );
+            $('#person').css('background-image','url('+bg_img.src+')' );
+            // 当背景可见时 在 将内容动画显示出来
+            afterBgImgVisibleAnimat();
+        }
+        logo_mg.src = "https://avatars.githubusercontent.com/u/15622519?v=3"
+
+
     }
     bg_img.src ='https://raw.githubusercontent.com/ZengTianShengZ/blog/gh-pages/test/imgs/left_bg2.jpg';
 
-
+   // https://avatars.githubusercontent.com/u/15622519?v=3
     $.ajax({
         type:'GET',
         url:'https://api.github.com/repos/ZengTianShengZ/ZengTianShengZ.github.io/issues',

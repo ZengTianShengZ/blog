@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable = no">
     <title>ZengTianShengZ Blog</title>
 
-
-    <link type="text/css" rel="stylesheet" href="src/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="src/css/bootstrap-theme.css">
-    <link type="text/css" rel="stylesheet" href="src/css/Normalize.css">
-    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    <link rel="stylesheet" href="bulid/css/combined-a6688a62c6.css">
 
 </head>
 <body>
@@ -146,14 +142,7 @@
         </div><!-- /.modal -->
     </div>
 
-
-    <script src="src/js/jquery.js"></script>
-    <script src="src/js/bootstrap.js"></script>
-
-    <script src="src/js/ejs.min.js"></script>
-
-    <script src="src/js/main.js" ></script>
-
+    <script src="bulid/js/combined-f8fd6acbbf.js"></script>
 
     <script id="blogContent" type="text/template">
         <% if (blogMessage.length) { %>
@@ -171,7 +160,10 @@
                 </div>
                 <div class="pull-left blog-intor" >
                     <p><%= blog.article_intor %></p>
-                    <p><a target="_blank" href='blog.html?<%= blog.url_id %>'>查看更多</a></p>
+
+                    <p><a target="_blank" href='blog.html?<%= blog.url_id %>' style="color: #FFF">查看更多</a></p>
+
+                    <!--<p><a target="_blank" href='blog.html?1'>查看更多</a></p>-->
                 </div>
             </div>
         </div>
