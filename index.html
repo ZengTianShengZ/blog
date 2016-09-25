@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable = no">
     <title>ZengTianShengZ Blog</title>
 
-    <link rel="stylesheet" href="bulid/css/combined-a6688a62c6.css">
+    <link rel="stylesheet" href="build/css/combined-a6688a62c6.css">
 
 </head>
 <body>
@@ -142,8 +142,15 @@
         </div><!-- /.modal -->
     </div>
 
-    <script src="bulid/js/combined-f8fd6acbbf.js"></script>
 
+    <script src="build/js/combined-f8fd6acbbf.js"></script>
+
+
+    <script src="../test/js/jquery.js"></script>
+    <script src="../test/js/bootstrap.js"></script>
+    <script src="js/ejs.min.js"></script>
+
+    <script src="js/main.js" ></script>
     <script id="blogContent" type="text/template">
         <% if (blogMessage.length) { %>
 
@@ -156,7 +163,7 @@
             </div>
             <div class="clearfix">
                 <div class="pull-right blog-img">
-                    <img src="src/imgs/blog_tt.jpg" id='blogImg<%= blog.url_id %>' alt="">
+                    <img src="build/imgs/blog_tt.jpg" id='blogImg<%= blog.url_id %>' alt="">
                 </div>
                 <div class="pull-left blog-intor" >
                     <p><%= blog.article_intor %></p>

@@ -12,7 +12,7 @@ var csso = require('gulp-csso'); // 压缩 css 的文件
 var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 var sass = require('gulp-sass');
-
+var less = require('gulp-less');
 
 // 合并，压缩文件，将 js文件夹下的js文件合并压缩成 all.js 放在 /dist文件夹下
 
@@ -25,17 +25,17 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-// 编译Sass , 会将 scss/文件夹下的 .scss 文件编译成 .css 文件放在 /css文件夹下
-gulp.task('sass', function() {
-    gulp.src('src/scss/!*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('src/css'));
+// 编译less , 会将 less/文件夹下的 .less 文件编译成 .css 文件放在 /css文件夹下
+gulp.task('less', function() {
+    return gulp.src(['src/less/*.less'])
+        .pipe(less())//编译
+        .pipe(gulp.dest('build/css/'));
 });
 
 // watch-sass
-gulp.task('watch-sass', function(){
+gulp.task('watch-less', function(){
     // 监听文件变化，有了监听，当你编写 js 或 sacc 文件时就会自动编译
-    gulp.watch('src/scss/!*.scss',['sass']);
+    gulp.watch('src/less/!*.less',['less']);
 });
 
 
