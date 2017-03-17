@@ -20,7 +20,7 @@ $ npm install
 ![img](https://raw.githubusercontent.com/ZengTianShengZ/blog/gh-pages/build/imgs/gg-bg.jpg)
 
 
-####微信二维码扫一扫
+#### 微信二维码扫一扫
 
 ![img2](https://raw.githubusercontent.com/ZengTianShengZ/blog/gh-pages/build/imgs/er_big.png)
 
