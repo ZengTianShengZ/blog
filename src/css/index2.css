@@ -7004,6 +7004,13 @@ h1 {
   margin: 2rem auto;
   color: #434343;
 }
+.blog-cont .message-limit {
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+}
 .blog-cont a {
   color: #434343;
 }
