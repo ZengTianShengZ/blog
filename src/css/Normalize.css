@@ -1,0 +1,114 @@
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+body {
+  margin: 0;
+}
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+img {
+  border-style: none;
+}
+/************
+ 页面布局
+ ************/
+/* ==========
+   整体样式�
+   ========== */
+/*  font-size: 62.5%; font-size默认16px   16*62.5% = 10*/
+html {
+  font-size: 62.5%;
+  color: #222;
+}
+/*  文本被选这得背景色 */
+::-moz-selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+/* ==========
+   一些工具样式
+   ========== */
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* !important 有了这句，不过这个类放在元素 class 里面 都会提升  */
+.mpull-right {
+  float: right !important;
+}
+.mpull-left {
+  float: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-center {
+  text-align: center !important;
+}
+/*  display: none  元素隐藏不占空间 */
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+/*  visibility: hidden;  元素隐藏还占空间 */
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/*  display: table; 也可清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
