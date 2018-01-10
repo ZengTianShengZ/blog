@@ -77,19 +77,16 @@
     <% } %>
 </script>
 <script type="text/javascript">
-    var _vds = _vds || [];
-      window._vds = _vds;
-      (function(){
-        _vds.push(['setAccountId', '95df1bbb02e104a7']);
+    window._pt_lt = new Date().getTime();
+        window._pt_sp_2 = [];
+        _pt_sp_2.push('setAccount,2b443d05');
+        var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
         (function() {
-          var vds = document.createElement('script');
-          vds.type='text/javascript';
-          vds.async = true;
-          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'assets.growingio.com/vds.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(vds, s);
-        })();
-      })();
+            var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+            atag.src = _protocol + 'js.ptengine.cn/2b443d05.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(atag, s);
+    })();          
     
     new WOW().init();
     $.get('https://api.github.com/users/ZengTianShengZ/repos?sort=updated', function (data) {
